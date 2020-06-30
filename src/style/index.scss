@@ -15,9 +15,18 @@ body {
   height: 100px;
   font-weight: bold;
   color: white;
+  line-height: 100px;
+  font-size: 4em;
   padding: 10px;
 }
 
 .buttonPanel {
   display: flex;
+  flex-direction: column;
+}
+
+.button_group {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
 }
