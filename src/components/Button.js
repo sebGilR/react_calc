@@ -2,11 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 
 function Button(props) {
-  const {
-    name,
-    wide = false,
-    color = 'orange'
-  } = props;
+  const { name, wide, color } = props;
 
   return (
     <div
@@ -18,8 +14,15 @@ function Button(props) {
   );
 }
 
+Button.defaultProps = {
+  wide: false,
+  color: 'orange',
+};
+
 Button.propTypes = {
   name: propTypes.string.isRequired,
+  wide: propTypes.bool,
+  color: propTypes.string,
 };
 
 export default Button;
