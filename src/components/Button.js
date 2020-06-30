@@ -21,6 +21,7 @@ Button.defaultProps = {
 
 Button.propTypes = {
   name: propTypes.string.isRequired,
+  wide: propTypes.string,
   color: propTypes.string,
 };
 
