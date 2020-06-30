@@ -25,6 +25,6 @@ const operate = (numberOne, numberTwo, operation) => {
   }
 
   return 0;
-}
+};
 
 export default operate;
