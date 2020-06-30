@@ -29,7 +29,7 @@ function ButtonPanel() {
         <Button name="+" />
       </div>
       <div className='button_group'>
-        <Button name="0" />
+        <Button name="0" wide={true} />
         <Button name="." />
         <Button name="=" />
       </div>
