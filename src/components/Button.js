@@ -8,5 +8,7 @@ function Button(props) {
 };
 
 Button.PropTypes = {
-  name: PropTypes.string
+  name: PropTypes.string.isRequired
 };
+
+export default Button;

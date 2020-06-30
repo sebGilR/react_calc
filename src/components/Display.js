@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 
 function Display(props) {
   return (
-    <h2>{props.result || 0}</h2>
+    <div>{props.result || 0}</div>
   );
 };
 
 Display.PropTypes = {
   result: PropTypes.string
 }
+
+export default Display;
