@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 function Display(props) {
   const { result } = props;
   return (
-    <div>{result}</div>
+    <div className='display'>{result}</div>
   );
 }
 
