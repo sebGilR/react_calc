@@ -17,7 +17,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
     };
   }
 
-  if (buttonName.match(/0-9/)) {
+  if (buttonName.match(/[0-9]/)) {
     return {
       total,
       next: next ? `${next}${buttonName}` : `${buttonName}`,
@@ -41,7 +41,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
     };
   }
 
-  if (buttonName.match(/[-+/X]/) && next && !total) {
+  if (buttonName.match(/[-/+X]/) && next && !total) {
     return {
       total: next,
       next: null,
@@ -49,7 +49,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
     };
   }
 
-  if (buttonName.match(/[-+/X]/) && !next && total) {
+  if (buttonName.match(/[-/+X]/) && !next && total) {
     return {
       total,
       next,
@@ -57,7 +57,7 @@ const calculate = ({ total, next, operation }, buttonName) => {
     };
   }
 
-  if (buttonName.match(/[-+/X]/) && next && total) {
+  if (buttonName.match(/[-/+X]/) && next && total) {
     return {
       total: operate(parseFloat(total), parseFloat(next), buttonName).toString(),
       next: null,

@@ -3,11 +3,13 @@ import propTypes from 'prop-types';
 
 function Button(props) {
   const { name, wide, color } = props;
+  const handleClick = e => props.clickHandler(e.target.innerText);
 
   return (
     <div
       className={`button ${wide && 'large'}`.trim()}
       style={{ backgroundColor: color }}
+      onClick={handleClick}
     >
       {name}
     </div>
