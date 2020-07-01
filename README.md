@@ -1,1 +1,1 @@
-# react_calc
+# React Calc
