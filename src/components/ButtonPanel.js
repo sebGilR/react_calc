@@ -28,7 +28,7 @@ function ButtonPanel(props) {
       <div className="button_group">
         <Button name="1" color="lightgray" clickHandler={handleClick} />
         <Button name="2" color="lightgray" clickHandler={handleClick} />
-        <Button name="2" color="lightgray" clickHandler={handleClick} />
+        <Button name="3" color="lightgray" clickHandler={handleClick} />
         <Button name="+" clickHandler={handleClick} />
       </div>
       <div className="button_group">
