@@ -10,6 +10,9 @@ function Button(props) {
       className={`button ${wide && 'large'}`.trim()}
       style={{ backgroundColor: color }}
       onClick={handleClick}
+      onKeyPress={handleClick}
+      role="button"
+      tabIndex={0}
     >
       {name}
     </div>
@@ -25,6 +28,7 @@ Button.propTypes = {
   name: propTypes.string.isRequired,
   wide: propTypes.bool,
   color: propTypes.string,
+  clickHandler: propTypes.func.isRequired,
 };
 
 export default Button;

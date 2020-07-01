@@ -11,13 +11,13 @@ class App extends React.Component {
       total: null,
       next: null,
       operation: null,
-    }
+    };
 
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(buttonName) {
-    const { total, next, operation } = this.state
+    const { total, next, operation } = this.state;
     this.setState(calculate({ total, next, operation }, buttonName));
   }
 
@@ -25,9 +25,9 @@ class App extends React.Component {
     const { total, next, operation } = this.state;
     let result = total || next;
     if (total && next && operation) {
-      result = `${total} ${operation.toLowerCase()} ${next}`
+      result = `${total} ${operation.toLowerCase()} ${next}`;
     } else if (total && operation) {
-      result = `${total} ${operation.toLowerCase()}`
+      result = `${total} ${operation.toLowerCase()}`;
     }
 
     return (
@@ -35,8 +35,8 @@ class App extends React.Component {
         <Display result={result || undefined} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
-    )
-  };
-};
+    );
+  }
+}
 
 export default App;
