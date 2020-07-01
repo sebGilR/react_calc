@@ -22,8 +22,13 @@ class App extends React.Component {
   }
 
   render() {
-    const { total, next } = this.state;
-    const result = total || next
+    const { total, next, operation } = this.state;
+    let result = total || next;
+    if (total && next && operation) {
+      result = `${total} ${operation.toLowerCase()} ${next}`
+    } else if (total && operation) {
+      result = `${total} ${operation.toLowerCase()}`
+    }
 
     return (
       <div id="calculator">

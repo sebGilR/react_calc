@@ -10,7 +10,7 @@ function ButtonPanel(props) {
         <Button name="AC" color="lightgray" clickHandler={handleClick} />
         <Button name="+/-" color="lightgray" clickHandler={handleClick} />
         <Button name="%" color="lightgray" clickHandler={handleClick} />
-        <Button name="÷" clickHandler={handleClick} />
+        <Button name="/" clickHandler={handleClick} />
       </div>
       <div className="button_group">
         <Button name="7" color="lightgray" clickHandler={handleClick} />
