@@ -4,7 +4,7 @@ This is a calculator program created using React stateful class components and f
 
 ## Live Demo
 
-[View Live Demo](https://react-calc-seb.herokuapp.com/)
+[View Live Demo](https://master.d11ubne3n01oap.amplifyapp.com/)
 
 ## Screenshot
 
